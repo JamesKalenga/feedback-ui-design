@@ -1,0 +1,140 @@
+
+
+/* This is used to reset the normal styles */
+*,*::before,
+*::after{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #fff8f1;
+    
+}
+
+.container{
+    position: relative;
+
+    width: 350px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.container .first-row{
+margin-top: 20px;
+text-align: center;
+width: 100%;
+
+}
+.container .first-row p{
+    font-weight: 600;
+    font-size: medium;
+    
+}
+.container .first-row p:last-child{
+    margin-top: 4px;
+}
+
+.choices{
+    display:flex;
+    width: 100%;
+    padding: 0px 20px;;
+}
+.container .choices .box{
+    width: 33.3%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 10px;;
+}
+
+.container .choices .fa-solid{
+    font-size: 40px;
+    color: orange;
+    margin-bottom: 15px;;
+}
+.container .choices .box  span{
+    color: black;
+    font-weight: 400;
+    font-size: medium;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+}
+
+
+.container .choices .box:hover{
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.active{
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);  
+}
+
+.button{
+    position:absolute;
+    bottom: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button button{
+    width: 35%;
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 8px;
+    border-radius: 3px;
+    font-size: medium;
+    font-weight: 400;
+
+}
+
+.container2{
+    position: relative;
+    width: 350px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container2 .first-row{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2 span, .container2 p , .container2 span:nth-last-child(0){
+    font-size: medium;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.container2 .fa-solid{
+    color: red;
+    font-size: 35px;
+}
+
+.hide{
+    display: none;
+}
